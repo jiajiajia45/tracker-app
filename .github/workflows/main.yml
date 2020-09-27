@@ -38,6 +38,6 @@ jobs:
         run: npm install --global surge
 
       - name: Deploy to Surge
-        run: gh-pages -dwww 1st-tracker-app.surge.sh --token ${{ secrets.SURGE_TOKEN}}
+        run: surge ./build tracker-app.surge.sh --token ${{ secrets.SURGE_TOKEN}}
        
     
